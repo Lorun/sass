@@ -83,7 +83,7 @@ $breaklarge: 1180px
 =hidetext
 	+hide-text
 
-=clr
+=clearfix
 	&:after
 		content: "."
 		display: block
@@ -92,6 +92,18 @@ $breaklarge: 1180px
 		clear: both
 		visibility: hidden
 	*zoom: 1
+
+=clr
+	display: table
+	*zoom: 1
+	&:after
+		content: ". ."
+		display: block
+		height: 0
+		word-spacing: 99in
+		overflow: hidden
+		font-size: 0.13em
+		line-height: 0
 
 =placeholder-color($color)
 	&:-moz-placeholder
