@@ -74,23 +74,27 @@ body {
 /* Navigation
  * ======================================================================================= */
 .nav {
+  display: table;
   *zoom: 1; }
   .nav:after {
-    content: ".";
+    content: ". .";
     display: block;
     height: 0;
-    font-size: 0;
-    clear: both;
-    visibility: hidden; }
+    word-spacing: 99in;
+    overflow: hidden;
+    font-size: 0.13em;
+    line-height: 0; }
 
 /* Footer
  * ======================================================================================= */
 .footer {
+  display: table;
   *zoom: 1; }
   .footer:after {
-    content: ".";
+    content: ". .";
     display: block;
     height: 0;
-    font-size: 0;
-    clear: both;
-    visibility: hidden; }
+    word-spacing: 99in;
+    overflow: hidden;
+    font-size: 0.13em;
+    line-height: 0; }

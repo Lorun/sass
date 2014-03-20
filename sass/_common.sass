@@ -39,12 +39,24 @@
 // +font(book, cytiapro-black-webfont)  
 // =book
 // 	font-family: "book",arial,sans-serif 
-	
+
+$a-color: #0066cc
+$a-color-h: #c05043
+
 body
 	font:
 		family: Arial,sans-serif
 		weight: normal
 		size: 14px
 	line-height: 1.4
+
+a
+	color: #005298
+	&:hover
+		color: $a-color-h
+	&:focus
+		color: $a-color-h
+	&:active
+		color: $a-color-h
 
 // common blocks
