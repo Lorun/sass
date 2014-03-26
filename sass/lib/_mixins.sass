@@ -23,6 +23,13 @@ $breaklarge: 1180px
 	text-overflow: ellipsis
 	white-space: nowrap
 
+=opacity($value)
+	$IEValue: $value*100
+	opacity: $value
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")"
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$IEValue})
+	//filter: alpha(opacity=$IEValue)
+
 =cover
 	background-repeat: no-repeat
 	background-size: cover
