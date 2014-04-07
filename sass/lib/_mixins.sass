@@ -43,6 +43,12 @@ $breaklarge: 1180px
 =box
 	+box-sizing(border-box)
 
+=box-sh($val)
+	-webkit-box-shadow: $val
+	-moz-box-shadow: $val
+	-ms-box-shadow: $val
+	-o-box-shadow: $val
+
 //simple gradient
 =g($color1, $color2)
 	+background-image(linear-gradient($color1, $color2))
