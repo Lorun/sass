@@ -59,4 +59,67 @@ a
 	&:active
 		color: $a-color-h
 
+p
+	margin-bottom: 7px
+
+/* Headers */
+%h
+	color: $h-color
+	line-height: 1.2
+	font-family: Arial, sans-serif
+	font-weight: bold
+h1, h2, h3
+	@extend %h
+h1
+	font-size: 34px
+	margin: 0 0 30px
+	
+h2
+	font-size: 32px
+	margin: 0 0 20px
+
+h3
+	font-size: 28px
+	margin: 0 0 15px
+h4
+	font-size: 22px
+	margin: 0 0 15px
+h5
+	font-size: 18px
+	margin: 0 0 10px
+
+/* Form Elements */
+%form-el
+	display: inline-block
+	height: 20px
+	padding: 3px 6px
+	font-size: 13px
+	line-height: 20px
+	color: #555555
+	vertical-align: middle
+%form-area
+	background-color: #dfe8f5
+	border: 1px solid #335d95
+	+tr(all linear 0.2s)
+	+box-sh(inset 0 1px 3px rgba(0, 0, 0, 0.2))
+	&:focus
+		background-color: #fff
+		border: 1px solid #005b95
+
+input[type="text"], input[type="password"], input[type="datetime"],
+input[type="datetime-local"], input[type="date"], input[type="month"],
+input[type="time"], input[type="week"], input[type="number"], input[type="email"],
+input[type="url"], input[type="search"], input[type="tel"], input[type="color"]
+	@extend %form-el
+	@extend %form-area
+	width: 200px
+
+textarea
+	@extend %form-el
+	@extend %form-area
+	width: 500px
+	height: 100px
+
+select
+	@extend %form-el
 // common blocks
